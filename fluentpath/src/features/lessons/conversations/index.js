@@ -1,19 +1,32 @@
-// Índice de módulos de conversación - Nivel A1
-// Todos los módulos completos con enfoque práctico y explicaciones en español
-
 import { identityContactScript } from "./identityContact";
 import { greetingsIntroductionsScript } from "./greetingsIntroductions";
 import { atTheRestaurantScript } from "./atTheRestaurant";
+import { airportTravelScript } from "./airportTravel";
+import { numbersMoneyScript } from "./numbersMoney";
+import { firstDayWorkScript } from "./firstDayWork";
+import { basicEmailScript } from "./basicEmail";
+import { smallTalkScript } from "./smallTalk";
+import { emergenciesScript } from "./emergencies";
 
-export { 
-  identityContactScript, 
+export {
+  identityContactScript,
   greetingsIntroductionsScript,
-  atTheRestaurantScript
+  atTheRestaurantScript,
+  airportTravelScript,
+  numbersMoneyScript,
+  firstDayWorkScript,
+  basicEmailScript,
+  smallTalkScript,
+  emergenciesScript
 };
 
-// SCRIPTS mapea module.id -> array de nodos (lo que LessonView espera)
 export const SCRIPTS = {
-  "a1-mod1-identity": identityContactScript.nodes || identityContactScript,
-  "a1-mod2-greetings": greetingsIntroductionsScript.nodes || greetingsIntroductionsScript,
-  "a1-mod3-restaurant": atTheRestaurantScript.nodes || atTheRestaurantScript,
+  identity_contact: identityContactScript.nodes || identityContactScript,
+  airport_travel: airportTravelScript.nodes || airportTravelScript,
+  restaurant: atTheRestaurantScript.nodes || atTheRestaurantScript,
+  numbers_money: numbersMoneyScript.nodes || numbersMoneyScript,
+  first_day_work: firstDayWorkScript.nodes || firstDayWorkScript,
+  basic_email: basicEmailScript.nodes || basicEmailScript,
+  small_talk: smallTalkScript.nodes || smallTalkScript,
+  emergencies: emergenciesScript.nodes || emergenciesScript
 };
