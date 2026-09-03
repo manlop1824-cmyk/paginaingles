@@ -189,3 +189,142 @@
   font-size: 14px;
   line-height: 1.6;
 }
+/* Sección de micrófono y feedback */
+.lesson-mic-section {
+  margin-top: 20px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.lesson-mic-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.lesson-retry {
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--color-glass-border);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-text);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.lesson-retry:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--color-gold);
+}
+
+.lesson-retry:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Tarjeta de feedback de pronunciación */
+.lesson-feedback-card {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lesson-feedback-card.success {
+  border-left: 4px solid #4ADE80;
+}
+
+.lesson-feedback-card.warning {
+  border-left: 4px solid #F87171;
+}
+
+.feedback-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.feedback-icon {
+  font-size: 20px;
+}
+
+.feedback-level {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.feedback-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feedback-message {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.feedback-transcript {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-text-dim);
+  font-style: italic;
+}
+
+.feedback-score-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.feedback-score-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease-out;
+}
+
+.lesson-mic-error {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: rgba(248, 113, 113, 0.15);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  border-radius: 10px;
+  color: #F87171;
+  font-size: 13px;
+  text-align: center;
+}
+
+.lesson-no-support {
+  margin-top: 16px;
+  padding: 14px;
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.2);
+  border-radius: 10px;
+  color: #FBBF24;
+  font-size: 13px;
+  text-align: center;
+}
