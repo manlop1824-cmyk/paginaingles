@@ -1,0 +1,191 @@
+.lesson-view {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.lesson-back {
+  background: none;
+  border: none;
+  color: var(--color-text-dim);
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.lesson-back:hover {
+  color: var(--color-gold);
+}
+
+.lesson-card {
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  backdrop-filter: blur(18px);
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: 0 24px 60px -30px rgba(0, 0, 0, 0.6);
+}
+
+.lesson-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.lesson-icon {
+  font-size: 30px;
+}
+
+.lesson-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 19px;
+  color: var(--color-text);
+}
+
+.lesson-scenario {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--color-text-dim);
+}
+
+.lesson-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.lesson-bubble {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.lesson-bubble-coach {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--color-text);
+  border-bottom-left-radius: 4px;
+}
+
+.lesson-bubble-user {
+  align-self: flex-end;
+  background: linear-gradient(135deg, var(--color-gold), #F0C382);
+  color: #1B140A;
+  border-bottom-right-radius: 4px;
+}
+
+.lesson-bubble-hint {
+  align-self: center;
+  background: none;
+  color: var(--color-coral);
+  font-size: 12px;
+  font-style: italic;
+}
+
+.lesson-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lesson-option {
+  text-align: left;
+  padding: 13px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--color-glass-border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--color-text);
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.lesson-option:hover {
+  border-color: var(--color-gold);
+  background: rgba(216, 166, 87, 0.08);
+}
+
+.lesson-finish {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, var(--color-teal), #7FE3C6);
+  color: #06231C;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.lesson-finish:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.lesson-bubble-coach {
+  position: relative;
+  padding-right: 40px;
+}
+
+.lesson-speak {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.lesson-speak:hover {
+  opacity: 1;
+}
+
+.lesson-mic-row {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.lesson-mic {
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--color-glass-border);
+  background: rgba(229, 103, 74, 0.12);
+  color: var(--color-coral);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.lesson-mic-active {
+  background: rgba(229, 103, 74, 0.28);
+}
+
+.lesson-mic-feedback {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.lesson-mic-feedback.ok {
+  color: var(--color-teal);
+}
+
+.lesson-mic-feedback.warn {
+  color: var(--color-coral);
+}
+
+.lesson-soon {
+  color: var(--color-text-dim);
+  font-size: 14px;
+  line-height: 1.6;
+}

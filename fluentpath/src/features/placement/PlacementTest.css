@@ -1,0 +1,122 @@
+.placement-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+}
+
+.placement-card {
+  width: 100%;
+  max-width: 560px;
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.6);
+}
+
+.placement-progress {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--color-text-dim);
+}
+
+.placement-progress-bar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.placement-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-teal), var(--color-gold));
+  transition: width 0.3s ease;
+}
+
+.placement-question-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.placement-question {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-text);
+  flex: 1;
+}
+
+.placement-speak {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.placement-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.placement-option {
+  text-align: left;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 1px solid var(--color-glass-border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--color-text);
+  font-size: 15px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.placement-option:hover {
+  border-color: var(--color-gold);
+  background: rgba(216, 166, 87, 0.08);
+}
+
+.placement-result {
+  text-align: center;
+}
+
+.placement-stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border: 2px solid var(--color-gold);
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--color-gold);
+  margin-bottom: 20px;
+  box-shadow: 0 0 24px rgba(216, 166, 87, 0.4);
+}
+
+.placement-result h2 {
+  font-family: var(--font-display);
+  margin: 0 0 12px;
+}
+
+.placement-result p {
+  color: var(--color-text-dim);
+  line-height: 1.6;
+}
+
+.placement-saving {
+  margin-top: 16px;
+  font-size: 13px;
+}

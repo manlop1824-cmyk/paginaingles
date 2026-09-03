@@ -1,0 +1,42 @@
+:root {
+  --color-bg: #0B1220;
+  --color-bg-elevated: #121B2E;
+  --color-glass: rgba(255, 255, 255, 0.045);
+  --color-glass-border: rgba(255, 255, 255, 0.09);
+  --color-text: #EDEFF5;
+  --color-text-dim: rgba(237, 239, 245, 0.62);
+  --color-gold: #D8A657;
+  --color-teal: #49C9A7;
+  --color-coral: #E5674A;
+  --font-display: 'Fraunces', serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: radial-gradient(circle at 20% -10%, #182541 0%, #0B1220 55%) fixed;
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  color: var(--color-text-dim);
+}
+
+button {
+  font-family: inherit;
+}
